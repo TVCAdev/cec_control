@@ -1,0 +1,8 @@
+FROM docker_cec_control:latest
+
+ENV TOP_DIR /cec_control
+
+COPY cec_control.py ${TOP_DIR}
+
+CMD ["/usr/bin/python3","cec_control.py"]
+
